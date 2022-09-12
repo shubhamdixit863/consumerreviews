@@ -6,6 +6,7 @@ import (
 	"consumerreviews/pkg/routes"
 	"consumerreviews/pkg/utils"
 	"github.com/gofiber/fiber/v2"
+	_ "github.com/joho/godotenv/autoload" // load .env file automatically
 	"os"
 )
 
