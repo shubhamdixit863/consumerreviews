@@ -29,4 +29,4 @@ COPY --from=build /go/src/consumerreviews/app .
 # Exposes port 3000 because our program listens on that port
 EXPOSE 8010
 
-ENTRYPOINT ["/usr/bin/dumb-init", "--"]
+CMD ["./app"]
