@@ -31,6 +31,6 @@ WORKDIR /app
 COPY --from=build /src/ .
 
 # Exposes port 8090 because our program listens on that port
-EXPOSE 8090
+EXPOSE 8010
 
 CMD ["./app"]
