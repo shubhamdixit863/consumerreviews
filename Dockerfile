@@ -24,10 +24,7 @@ WORKDIR /app
 # `boilerplate` should be replaced here as well
 COPY --from=build /go/src/consumerreviews/app .
 
-# Add packages
-RUN apk -U upgrade \
-    && apk add --no-cache dumb-init ca-certificates \
-    && chmod +x /app/app
+
 
 # Exposes port 3000 because our program listens on that port
 EXPOSE 8010
