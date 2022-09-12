@@ -16,6 +16,8 @@ func main() {
 
 	// Define a new Fiber app with config.
 	app := fiber.New(config)
+	//configuring the static folder
+	app.Static("/", "./app/static")
 
 	// Middlewares.
 	middleware.FiberMiddleware(app) // Register Fiber's middleware for app.
